@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ege Atabey</title>
+  <meta name="description" content="Ege Atabey kişisel web sitesi: spor, araba, yemek ve sinema üzerine.">
+  <link rel="icon" type="image/jpeg" href="resimler/maskot.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="atla-baglantisi" href="#kapak">İçeriğe geç</a>
+
+  <header class="ust-menu" id="ust-menu">
+    <div class="kapsayici menu-ici">
+      <a class="marka" href="#kapak">Ege Atabey</a>
+
+      <button
+        type="button"
+        class="menu-dugmesi"
+        id="menu-dugmesi"
+        aria-expanded="false"
+        aria-controls="ana-gezinme"
+      >
+        Menü
+      </button>
+
+      <nav class="gezinme" id="ana-gezinme" aria-label="Ana menü">
+        <a class="gezinme-baglantisi aktif" href="#kapak">Kapak</a>
+        <a class="gezinme-baglantisi" href="#hakkimda">Hakkımda</a>
+        <a class="gezinme-baglantisi" href="#ilgi-alanlarim">İlgi alanlarım</a>
+        <a class="gezinme-baglantisi" href="#iletisim">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="kapak" id="kapak" aria-labelledby="kapak-baslik">
+      <div class="kapsayici kapak-izgara">
+        <div class="kapak-metin-kutusu kutu">
+          <span class="etiket">Kişisel Site</span>
+          <h1 id="kapak-baslik">Ege Atabey</h1>
+          <p class="kapak-tanitim">
+            Sporla enerjisini tazeleyen; araba, yemek ve iyi filmlerle dolu dünyasını paylaşan kişisel sayfam.
+          </p>
+          <div class="kapak-eylemler">
+            <a class="dugme dugme-vurgu" href="#hakkimda">Beni tanı</a>
+            <a class="dugme dugme-ikincil" href="#ilgi-alanlarim">İlgi alanlarım</a>
+          </div>
+        </div>
+
+        <figure class="kapak-gorsel-cercevesi kutu">
+          <img
+            src="resimler/kapak.jpg"
+            alt="Krem kağıt üzerinde mercan kırmızısı ve koyu lacivert baskı tarzında çizilmiş, neşeyle banjo çalan gülümseyen kaplumbağa illüstrasyonu"
+            class="kapak-gorseli"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <section class="bolum hakkimda" id="hakkimda" aria-labelledby="hakkimda-baslik">
+      <div class="kapsayici">
+        <div class="bolum-basligi">
+          <span class="bolum-no" aria-hidden="true">01</span>
+          <h2 id="hakkimda-baslik">Hakkımda</h2>
+        </div>
+
+        <div class="hakkimda-izgara">
+          <figure class="maskot-kutusu kutu">
+            <img
+              src="resimler/maskot.jpg"
+              alt="Mercan kırmızısı zemin ortasındaki krem kart üzerinde lacivert konturlu gülümseyen kaplumbağa maskot çizimi"
+              class="maskot-gorseli"
+            >
+            <figcaption class="maskot-altyazi">Maskot: Kaplumbağa</figcaption>
+          </figure>
+
+          <div class="hakkimda-metin kutu">
+            <p>
+              Bu aralar günümün büyük kısmını spora ayırıyor, düzenli antrenmanlarla kendimi sürekli geliştirmeye odaklanıyorum.
+              Sporun yanı sıra otomobillerin dünyasını yakından takip etmek ve farklı lezzetler keşfetmek bana her zaman büyük keyif veriyor.
+              Günün yorgunluğunu atmak istediğimde ise iyi bir film açıp sinemanın atmosferinde kaybolmayı çok seviyorum.
+            </p>
+            <ul class="anahtar-etiketler" aria-label="Öne çıkan konular">
+              <li>Spor</li>
+              <li>Araba</li>
+              <li>Yemek</li>
+              <li>Film</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bolum ilgi-alanlarim" id="ilgi-alanlarim" aria-labelledby="ilgi-alanlarim-baslik">
+      <div class="kapsayici">
+        <div class="bolum-basligi bolum-basligi-kutu kutu">
+          <span class="bolum-no" aria-hidden="true">02</span>
+          <h2 id="ilgi-alanlarim-baslik">İlgi alanlarım</h2>
+        </div>
+
+        <div class="kartlar-izgara">
+          <article class="kart kutu">
+            <div class="kart-gorsel-alani">
+              <img
+                src="resimler/kart-1.jpg"
+                alt="Bir tepenin üstünden müzik notaları, spor topları, tenis raketleri ve meyve çizimleriyle dolu manzaraya bakan mercan kırmızısı ve lacivert kaplumbağa illüstrasyonu"
+                class="kart-gorseli"
+                loading="lazy"
+              >
+            </div>
+            <div class="kart-icerik">
+              <span class="kart-sira">01 / SPOR</span>
+              <h3>Spor</h3>
+              <p>
+                Bu aralar en çok zaman ayırdığım uğraş: düzenli antrenman yapmak, hareket halinde kalmak ve her gün bir adım ileri gitmek.
+              </p>
+            </div>
+          </article>
+
+          <article class="kart kutu">
+            <div class="kart-gorsel-alani">
+              <img
+                src="resimler/kart-2.jpg"
+                alt="Stadyumlar, yemek kamyonları, gitarlar, spor topları ve aşçı figürlerinin önünde oturan gülümseyen kaplumbağa illüstrasyonu"
+                class="kart-gorseli"
+                loading="lazy"
+              >
+            </div>
+            <div class="kart-icerik">
+              <span class="kart-sira">02 / ARABA</span>
+              <h3>Araba</h3>
+              <p>
+                Tasarım çizgileri, motor karakteri ve sürüş dinamikleriyle otomobil kültürünü ve yeni modelleri yakından takip ediyorum.
+              </p>
+            </div>
+          </article>
+
+          <article class="kart kutu">
+            <div class="kart-gorsel-alani">
+              <img
+                src="resimler/kart-3.jpg"
+                alt="Küçük bir taburede oturarak büyük koyu lacivert bir tuba çalan mercan kırmızısı ve lacivert baskı tarzı kaplumbağa illüstrasyonu"
+                class="kart-gorseli"
+                loading="lazy"
+              >
+            </div>
+            <div class="kart-icerik">
+              <span class="kart-sira">03 / YEMEK</span>
+              <h3>Yemek</h3>
+              <p>
+                Farklı mutfaklardan yeni tatlar denemek, iyi hazırlanmış yemekleri keşfetmek ve güzel bir sofrada buluşmak en sevdiğim keyiflerden.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bolum iletisim" id="iletisim" aria-labelledby="iletisim-baslik">
+      <div class="kapsayici">
+        <div class="iletisim-kutusu kutu">
+          <div class="iletisim-metin">
+            <span class="etiket etiket-acik">03 / İletişim</span>
+            <h2 id="iletisim-baslik">İletişim</h2>
+            <p>
+              Spor, arabalar, yemek ya da güzel bir film önerisi üzerine konuşmak istersen bana e-posta üzerinden ulaşabilirsin.
+            </p>
+          </div>
+
+          <div class="iletisim-eylemler">
+            <a class="dugme dugme-vurgu" href="mailto:egeatabey@ornek.com">
+              E-posta gönder: egeatabey@ornek.com
+            </a>
+            <button
+              type="button"
+              class="dugme dugme-acik"
+              id="eposta-kopyala"
+              data-eposta="egeatabey@ornek.com"
+            >
+              Adresi kopyala
+            </button>
+            <p class="kopya-durumu" id="kopya-durumu" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="alt-bilgi">
+    <div class="kapsayici alt-bilgi-ici">
+      <p class="alt-marka">Ege Atabey</p>
+      <p class="yapay-zeka-notu">Bu sitedeki görseller yapay zekâ ile üretildi.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

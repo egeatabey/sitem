@@ -1,0 +1,202 @@
+:root {
+  --bg-sayfa: #f6f2e7;
+  --bg-kart: #fffdf9;
+  --baslik-renk: #1a2269;
+  --metin-ana: #1a2269;
+  --metin-ikincil: #2e3768;
+  --buton-bg: #bf3b27;
+  --buton-hover-bg: #1a2269;
+  --buton-metin: #ffffff;
+  --vurgu: #bf3b27;
+  --kenarlik: #dfd7c5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-sayfa);
+  color: var(--metin-ana);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--baslik-renk);
+}
+
+button,
+.buton,
+.btn,
+input[type="submit"],
+input[type="button"] {
+  background-color: var(--buton-bg);
+  color: var(--buton-metin);
+  border: 2px solid var(--buton-bg);
+  border-radius: 8px;
+  padding: 0.65rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+button:hover,
+.buton:hover,
+.btn:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: var(--buton-hover-bg);
+  border-color: var(--buton-hover-bg);
+  color: var(--bg-sayfa);
+}
+
+button:focus-visible,
+.buton:focus-visible,
+.btn:focus-visible,
+input[type="submit"]:focus-visible,
+input[type="button"]:focus-visible {
+  outline: 3px solid var(--baslik-renk);
+  outline-offset: 2px;
+}
+
+.kapak-alani {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 3px solid var(--baslik-renk);
+}
+
+.kapak-gorseli {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.icerik {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  flex: 1;
+}
+
+.baslik-bolumu {
+  margin-bottom: 3rem;
+}
+
+.baslik-satiri {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.maskot-gorseli {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  border: 2px solid var(--baslik-renk);
+  flex-shrink: 0;
+  display: block;
+}
+
+.baslik-satiri h1 {
+  font-size: clamp(1.9rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--baslik-renk);
+}
+
+.giris-metni {
+  font-size: 1.05rem;
+  color: var(--metin-ikincil);
+  max-width: 640px;
+}
+
+.ilgi-alanlarim h2 {
+  font-size: 1.65rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--baslik-renk);
+  display: inline-block;
+  border-bottom: 3px solid var(--vurgu);
+  padding-bottom: 0.25rem;
+}
+
+.kartlar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.kart {
+  background-color: var(--bg-kart);
+  border: 1.5px solid var(--kenarlik);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 18px rgba(26, 34, 105, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kart:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(26, 34, 105, 0.1);
+}
+
+.kart-gorseli {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-bottom: 1.5px solid var(--kenarlik);
+}
+
+.kart-icerik {
+  padding: 1.25rem 1.35rem 1.5rem;
+}
+
+.kart-icerik h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--baslik-renk);
+}
+
+.kart-icerik p {
+  font-size: 0.95rem;
+  color: var(--metin-ikincil);
+}
+
+.alt-bilgi {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  border-top: 1px solid var(--kenarlik);
+  color: var(--metin-ikincil);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 860px) {
+  .kartlar {
+    grid-template-columns: 1fr;
+  }
+
+  .icerik {
+    padding: 2rem 1.25rem 3rem;
+  }
+}
